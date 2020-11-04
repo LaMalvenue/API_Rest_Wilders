@@ -1,0 +1,33 @@
+#http
+GET http://127.0.0.1:3200/api/wilder
+###
+
+#http 
+GET http://127.0.0.1:3200/api/wilder/Aurelien
+###
+
+#http
+POST http://127.0.0.1:3200/api/wilder
+Content-Type: application/json
+
+{
+    "name":"Aurelien",
+    "city":"Lyon",
+    "skills":[
+        { "title": "HTML", "count": 10 },
+        { "title": "React", "count": 5 }
+    ]
+}
+###
+
+#http
+PUT http://127.0.0.1:3200/api/wilder/5fa1c6f9a2a561470e7eebf9
+Content-Type: application/json
+
+{
+    "city":"Londres"
+}
+###
+
+#http
+DELETE http://127.0.0.1:3200/api/wilder/Aurelien
