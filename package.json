@@ -2,17 +2,20 @@
   "name": "crud-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.10.11"
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.10.11",
+    "save": "^2.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
