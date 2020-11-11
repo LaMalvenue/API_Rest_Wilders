@@ -3,10 +3,10 @@ POST http://127.0.0.1:5000/api/wilder
 Content-Type: application/json
 
 {
-  "name":"Jane Doe",
+  "name":"Jane Doe11",
   "city":"Lyon",
   "skills":[
-    { "title": "HTML", "count": 10 },
+    { "title": "HTML1", "count": 10 },
     { "title": "React", "count": 5 }
   ]
 }
