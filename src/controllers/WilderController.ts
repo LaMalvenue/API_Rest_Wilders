@@ -17,7 +17,7 @@ export = {
     res.json(result);
   },
   delete: async (req: Request, res: Response): Promise<void> => {
-    const result = await WilderModel.deleteOne({ _id: req.body._id });
+    const result = await WilderModel.deleteMany({ _id: req.params });
     res.json({ success: true, result });
   },
 };

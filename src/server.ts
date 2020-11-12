@@ -44,7 +44,7 @@ app.get("/", (req: Request, res: Response) => {
 app.post(versionApi, asyncHandler(WilderController.create));
 app.get(versionApi, asyncHandler(WilderController.read));
 app.put(versionApi, asyncHandler(WilderController.update));
-app.delete(versionApi, asyncHandler(WilderController.delete));
+app.delete(`${versionApi}/:_id`, asyncHandler(WilderController.delete));
 
 app.get("*", (req: Request, res: Response) => {
   res.status(404);
